@@ -1,0 +1,47 @@
+body{
+    background-color: #d9d9d9;
+
+}
+
+#cabecero{
+    background-color: #7D3A1F;
+    height: 80px;
+}
+
+#cuerpoLogin{
+    background-color: #F2E9E1;
+}
+
+#Titulo{
+    color: #716F35;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#inputLogin{
+    border-radius: 10px;
+    border-style: none;
+    background-color: #F6F1F1;
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  #btnSesion{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d9d9d9;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #btnSesion:hover {
+      background-color: #c2c2c2;
+  }
