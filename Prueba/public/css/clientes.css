@@ -26,6 +26,25 @@ body{
     font-weight: bold;
 }
 
+.addCliente{
+    background-color: #AA948E;
+    font-weight: bold;
+}
+
+.addCliente:hover{
+    background-color: #8b7872;
+}
+
 #tarjetaClientes{
     background-color: #F6F1F1;
+}
+
+.editCliente{
+    background-color: #AA948E;
+    font-weight: bold;
+    float: right;
+}
+
+.editCliente:hover{
+    background-color: #8b7872;
 }

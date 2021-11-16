@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link href="css/clientes.css" rel="stylesheet" />
-       <!-- jQuery library -->
+    <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Popper JS -->
@@ -20,6 +21,7 @@
 
     <title>Clientes</title>
 </head>
+
 <body>
     <!--Sección de header-->
     <div class="container-fluid row" id="cabecero">
@@ -67,67 +69,123 @@
     <br>
     <!--Sección clientes-->
     <div class="container-fluid">
-        <button class="btn btn-primary">Agregar + </button>
+        <button class="btn addCliente">+ Agregar </button>
     </div>
     <br>
     <div class="container-fluid">
-        <div class="container" id="tarjetaClientes">
+        <div class="container">
             <div class="row">
-                <div class="container col-3" id="tarjetaClientes">
-                    <img src="img/Producto1.PNG" id="fotoInv">
+                <div class="card" style="width: 23rem; margin-right: 10px; border-radius: 30px;" id="tarjetaClientes" style="border-radius: 10px;">
+                    <h4>ID: 1</h4>
+                    <img class="card-img-top" src="img/Cliente1.PNG" alt="Card image cap" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="container col-6">
+                                <h6 style="text-align: left; float: left;">Nombre: </h6>
+                                <p style="text-align: center;">Diana</p>
+                            </div>
+                            <div class="container col-6">
+                                <h6 style="text-align: left; float: left;">Apellido: </h6>
+                                <p style="text-align: center;">Bojorquez</p>
+                            </div>
+                        </div>
+                        <h6 style="float: left;">Dirección: </h6><p style="text-align: center;">Ponte Vedra, Irapuato, GTO.</p>
+                        <h6 style="float: left;">Correo: </h6><p style="text-align: center;">dianaBS@outlook.com</p>
+                        <h6 style="float: left;">Teléfono: </h6><p style="text-align: center;">477 589 1632</p>
+                        <button class="btn editCliente">Editar </button>
+                    </div>
                 </div>
-                <div class="container col-3" id="tarjetaClientes">
-                    <img src="img/Producto1.PNG" id="fotoInv">
+
+                <div class="card" style="width: 23rem; margin-right: 10px; border-radius: 30px;" id="tarjetaClientes">
+                    <h4>ID: 2</h4>
+                    <img class="card-img-top" src="img/Cliente1.PNG" alt="Card image cap" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="container col-6">
+                                <h6 style="text-align: left; float: left;">Nombre: </h6>
+                                <p style="text-align: center;">Jorge</p>
+                            </div>
+                            <div class="container col-6">
+                                <h6 style="text-align: left; float: left;">Apellido: </h6>
+                                <p style="text-align: center;">Vera</p>
+                            </div>
+                        </div>
+                        <h6 style="float: left;">Dirección: </h6><p style="text-align: center;">El Pedregal, GDL, Jalisco</p>
+                        <h6 style="float: left;">Correo: </h6><p style="text-align: center;">jorgeiverah@gmail.com</p>
+                        <h6 style="float: left;">Teléfono: </h6><p style="text-align: center;">331 111 0003</p>
+                        <button class="btn editCliente">Editar </button>
+                    </div>
                 </div>
-                <div class="container col-3" id="tarjetaClientes">
-                    <img src="img/Producto1.PNG" id="fotoInv">
+
+                <div class="card" style="width: 23rem; margin-right: 10px; border-radius: 30px;" id="tarjetaClientes" style="border-radius: 10px;">
+                    <h4>ID: 3</h4>
+                    <img class="card-img-top" src="img/Cliente1.PNG" alt="Card image cap" style="border-radius: 10px;">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="container col-6">
+                                <h6 style="text-align: left; float: left;">Nombre: </h6>
+                                <p style="text-align: center;">Xavier</p>
+                            </div>
+                            <div class="container col-6">
+                                <h6 style="text-align: left; float: left;">Apellido: </h6>
+                                <p style="text-align: center;">Barragán</p>
+                            </div>
+                        </div>
+                        <h6 style="float: left;">Dirección: </h6><p style="text-align: center;">Campestre, León, GTO.</p>
+                        <h6 style="float: left;">Correo: </h6><p style="text-align: center;">xavierDr.Di@gmail.com</p>
+                        <h6 style="float: left;">Teléfono: </h6><p style="text-align: center;">477 666 0765</p>
+                        <button class="btn editCliente">Editar </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    </div>
 
     <!--Sección del modal-->
-    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content modalito">
-            <div class="modal-body row">
-                <div class="container col-4">
-                    <img src="img/Modal1.PNG" class="fotoModal">
-                </div>
-                <div class="container col-8">
-                    <h4>Nombre: &nbsp;<input type="text" placeholder="Huevo"></h4>
-                    <h4>Cantidad: &nbsp;<input type="text" placeholder="3 kg"></h4>
-                    <h4>Proveedor: &nbsp;<select id="cars" name="cars">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option>
-                      </select></h4>
-                    <h4>Descripción:</h4>
-                    <textarea rows="4" cols="60">
+            <div class="modal-content modalito">
+                <div class="modal-body row">
+                    <div class="container col-4">
+                        <img src="img/Modal1.PNG" class="fotoModal">
+                    </div>
+                    <div class="container col-8">
+                        <h4>Nombre: &nbsp;<input type="text" placeholder="Huevo"></h4>
+                        <h4>Cantidad: &nbsp;<input type="text" placeholder="3 kg"></h4>
+                        <h4>Proveedor: &nbsp;<select id="cars" name="cars">
+                                <option value="volvo">Volvo</option>
+                                <option value="saab">Saab</option>
+                                <option value="fiat">Fiat</option>
+                                <option value="audi">Audi</option>
+                            </select></h4>
+                        <h4>Descripción:</h4>
+                        <textarea rows="4" cols="60">
                         At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
                         </textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn eliminar" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn editar">Guardar</button>
                 </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn eliminar" data-dismiss="modal">Cerrar</button>
-              <button type="button" class="btn editar">Guardar</button>
-            </div>
-          </div>
         </div>
-      </div>
-      <!--Termina sección del modal-->
+    </div>
+    <!--Termina sección del modal-->
 
-      <br>
-      <footer>
+    <br>
+    <footer>
         <div class="container-fluid" id="cabecero" style="text-align: center; justify-content: center;">
             <br>
             <img class="FooterBread" src="img/FooterBread.png" alt="Pancito">
             <h2 class="footerText">Copyright @ - 2021 | Pyme |</h2>
             <br>
         </div>
-      </footer>
+    </footer>
 
 
 </body>
+
 </html>
