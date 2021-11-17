@@ -1,0 +1,86 @@
+body{
+    background-color: #FFFF;
+
+}
+
+#cabecero{
+    background-color: #7D3A1F;
+    color: #F2E9E1
+}
+
+#navContainer{
+    background-color: #d9d9d9;
+}
+
+.navBar{
+    color: black;
+    font-size: 20px;
+}
+
+.navBar:hover{
+    color: #C0844D; 
+}
+
+.back{
+    color: black;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.back:hover{
+    color: #C0844D;
+}
+
+.active{
+    color: black;
+    font-weight: bold;
+}
+
+.addVenta{
+    background-color: #AA948E;
+    font-weight: bold;
+}
+
+.headVenta{
+    background-color: #ADA7A7;
+    text-align: center;
+}
+
+.bodyVenta{
+    background-color: #ECECEC;
+    text-align: center;
+}
+
+.editarVenta{
+    background-color: #AA948E;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.editarVenta:hover {
+    background-color: #8b7872;
+}
+
+.guardar{
+    float: right;
+    margin: 2px;
+    font-weight: bold;
+    background-color: #716F35;
+    color: white;
+}
+
+.guardar:hover{
+    background-color: #585729;
+    
+}
+
+.cerrar{
+    float: right;
+    margin: 2px;
+    font-weight: bold;
+    background-color: #B24831;
+}
+
+.cerrar:hover{
+    background-color: #b13d23;
+}
