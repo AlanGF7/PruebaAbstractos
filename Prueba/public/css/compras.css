@@ -36,12 +36,12 @@ body{
     font-weight: bold;
 }
 
-.addCliente{
+.addCompra{
     background-color: #AA948E;
     font-weight: bold;
 }
 
-.addCliente:hover{
+.addCompra:hover{
     background-color: #8b7872;
 }
 

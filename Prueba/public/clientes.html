@@ -27,7 +27,7 @@
     <div class="container-fluid row" id="cabecero">
         <br>
         <div class="container col-7" style="border-style: solid; border-color: purple;">
-            <h1>Inventario</h1>
+            <h1>Cliente</h1>
         </div>
         <div class="dropdown show col-5" style="border-style: solid; border-color: red; ">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -69,7 +69,7 @@
     <br>
     <!--Sección clientes-->
     <div class="container-fluid">
-        <button class="btn addCliente">+ Agregar </button>
+        <button class="btn addCliente" data-toggle="modal" data-target=".bd-example-modal-lg">+ Agregar </button>
     </div>
     <br>
     <div class="container-fluid">
@@ -92,7 +92,7 @@
                         <h6 style="float: left;">Dirección: </h6><p style="text-align: center;">Ponte Vedra, Irapuato, GTO.</p>
                         <h6 style="float: left;">Correo: </h6><p style="text-align: center;">dianaBS@outlook.com</p>
                         <h6 style="float: left;">Teléfono: </h6><p style="text-align: center;">477 589 1632</p>
-                        <button class="btn editCliente">Editar </button>
+                        <a href="editarCliente.html"><button class="btn editCliente" >Editar </button></a>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
                         <h6 style="float: left;">Dirección: </h6><p style="text-align: center;">El Pedregal, GDL, Jalisco</p>
                         <h6 style="float: left;">Correo: </h6><p style="text-align: center;">jorgeiverah@gmail.com</p>
                         <h6 style="float: left;">Teléfono: </h6><p style="text-align: center;">331 111 0003</p>
-                        <button class="btn editCliente">Editar </button>
+                        <a href="editarCliente.html"><button class="btn editCliente" >Editar </button></a>
                     </div>
                 </div>
 
@@ -134,7 +134,7 @@
                         <h6 style="float: left;">Dirección: </h6><p style="text-align: center;">Campestre, León, GTO.</p>
                         <h6 style="float: left;">Correo: </h6><p style="text-align: center;">xavierDr.Di@gmail.com</p>
                         <h6 style="float: left;">Teléfono: </h6><p style="text-align: center;">477 666 0765</p>
-                        <button class="btn editCliente">Editar </button>
+                        <a href="editarCliente.html"><button class="btn editCliente" >Editar </button></a>
                     </div>
                 </div>
             </div>
@@ -147,28 +147,18 @@
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content modalito">
-                <div class="modal-body row">
-                    <div class="container col-4">
-                        <img src="img/Modal1.PNG" class="fotoModal">
-                    </div>
-                    <div class="container col-8">
-                        <h4>Nombre: &nbsp;<input type="text" placeholder="Huevo"></h4>
-                        <h4>Cantidad: &nbsp;<input type="text" placeholder="3 kg"></h4>
-                        <h4>Proveedor: &nbsp;<select id="cars" name="cars">
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="fiat">Fiat</option>
-                                <option value="audi">Audi</option>
-                            </select></h4>
-                        <h4>Descripción:</h4>
-                        <textarea rows="4" cols="60">
-                        At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
-                        </textarea>
-                    </div>
+                <div class="modal-body">
+                    <input type="text" placeholder="Nombre..." style="float: left; width: 45%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
+                    <input type="text" placeholder="Apellido..." style="float: right; width: 45%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
+                    <br><br>
+                    <input type="text" placeholder="Dirección..." style="width: 100%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
+                    <br><br>
+                    <input type="text" placeholder="Teléfono..." style="float: left; width: 35%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
+                    <input type="text" placeholder="Correo..." style="float: right; width: 50%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn eliminar" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn editar">Guardar</button>
+                    <button type="button" class="btn cerrar" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn guardar">Guardar</button>
                 </div>
             </div>
         </div>
