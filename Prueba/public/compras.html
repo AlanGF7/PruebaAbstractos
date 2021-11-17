@@ -67,7 +67,7 @@
     </div>
     <!--Termina sección de Navbar-->
     <br>
-    <!--Sección clientes-->
+    <!--Sección compras-->
     <div class="container-fluid">
         <h4><a href="clientes.html" class="back">Regresar</a></h4>
         <br>
@@ -75,19 +75,68 @@
     </div>
     <br>
     <div class="row">
-        <div class="container-fluid col-11" style="border-color: blueviolet; border-style: solid;">
+        <div class="container-fluid col-11" style="background-color: #B8A77F">
         <h1>ID Compra: 1</h1>
         </div>
-        <div class="container-fluid col-11" style="border-color: blueviolet; border-style: solid;">
+        <div class="container-fluid col-11" style="background-color: #AA948E;">
+            <h4 style="display: inline-block;">ID Proveedor: </h4><h5 style="display: inline-block;" id="idProveedorCompra">&nbsp; &nbsp;8</h5> <h4 style="display: inline-block;" id="idNombreProveedor">&nbsp; &nbsp;Nombre: </h4><h5 style="display: inline-block;">&nbsp; &nbsp;Munsa</h5><h4 style="display: inline-block;">&nbsp; &nbsp;&nbsp; &nbsp;Dirección: </h4><h5 style="display: inline-block;" id="idDireccion">&nbsp; &nbsp;Blvd. Timoteo Lozano 114-D, San Miguel, 37460 León, GTO.</h5>
+        </div>
+        <div class="container-fluid col-11" style="background-color: #F2E9E1;">
+        <br>
         <div class="row">
-            <h5 class="col-1">ID Proveedor: <h4 class="col-1" style="float: left;">8</h4> </h5>
-            <h4 class="col-1">Nombre: <h5 class="col-1" style="float: left;">Munsa</h5> </h4>
+            <div class="col-1">
+                <img src="img/Producto1.PNG" alt="FotoPan">
+            </div>
+            <div class="col-2" style="display: inline-block;">
+                <h4 style="display: inline-block;">ID Producto: </h4><h5 style="display: inline-block;" id="idProductosCompra">&nbsp; &nbsp;12</h5>
+                <br><br>
+                <h4 style="display: inline-block;">Costo: </h4><h5 style="display: inline-block;" id="costoCompra">&nbsp; &nbsp;$890.00</h5>
+            </div>
+            <div class="col-2">
+                <h4 style="display: inline-block;">Nombre: </h4><h5 style="display: inline-block;" id="nombreCompra">&nbsp; &nbsp;Harina</h5>
+                <br><br>
+                <h4 style="display: inline-block;">Cantidad: </h4><h5 style="display: inline-block;" id="cantidadCompra">&nbsp; &nbsp;200</h5>
+            </div>
+            <div class="col-7">
+                <button class="btn editarCompra">Editar</button>
+            </div>
         </div>
-        </div>
-        <div class="container-fluid col-11" style="border-color: blueviolet; border-style: solid;">
-        <h1>Lala</h1>
+        <br>
         </div>
     </div>
+    <br>
+    <div class="row">
+        <div class="container-fluid col-11" style="background-color: #B8A77F">
+        <h1>ID Compra: 1</h1>
+        </div>
+        <div class="container-fluid col-11" style="background-color: #AA948E;">
+            <h4 style="display: inline-block;">ID Proveedor: </h4><h5 style="display: inline-block;" id="idProveedorCompra">&nbsp; &nbsp;8</h5> <h4 style="display: inline-block;" id="idNombreProveedor">&nbsp; &nbsp;Nombre: </h4><h5 style="display: inline-block;">&nbsp; &nbsp;Munsa</h5><h4 style="display: inline-block;">&nbsp; &nbsp;&nbsp; &nbsp;Dirección: </h4><h5 style="display: inline-block;" id="idDireccion">&nbsp; &nbsp;Blvd. Timoteo Lozano 114-D, San Miguel, 37460 León, GTO.</h5>
+        </div>
+        <div class="container-fluid col-11" style="background-color: #F2E9E1;">
+        <br>
+        <div class="row">
+            <div class="col-1">
+                <img src="img/Producto1.PNG" alt="FotoPan">
+            </div>
+            <div class="col-2" style="display: inline-block;">
+                <h4 style="display: inline-block;">ID Producto: </h4><h5 style="display: inline-block;" id="idProductosCompra">&nbsp; &nbsp;12</h5>
+                <br><br>
+                <h4 style="display: inline-block;">Costo: </h4><h5 style="display: inline-block;" id="costoCompra">&nbsp; &nbsp;$890.00</h5>
+            </div>
+            <div class="col-2">
+                <h4 style="display: inline-block;">Nombre: </h4><h5 style="display: inline-block;" id="nombreCompra">&nbsp; &nbsp;Harina</h5>
+                <br><br>
+                <h4 style="display: inline-block;">Cantidad: </h4><h5 style="display: inline-block;" id="cantidadCompra">&nbsp; &nbsp;200</h5>
+            </div>
+            <div class="col-7">
+                <button class="btn editarCompra">Editar</button>
+            </div>
+        </div>
+        <br>
+        </div>
+    </div>
+    <!--Termina sección compras-->
+
 
     <!--Sección del modal-->
     <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
@@ -100,12 +149,18 @@
                     <br><br>
                     <input type="text" placeholder="Dirección..." style="width: 100%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
                     <br><br>
-                    <input type="text" placeholder="Teléfono..." style="float: left; width: 35%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
-                    <input type="text" placeholder="Correo..." style="float: right; width: 50%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
+                    <select name="cars" id="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    <input type="text" placeholder="Costo..." style="width: 20%; border-radius: 10px; background-color: #ECECEC; border-style: none; margin-left: 25%;">
+                    <input type="text" placeholder="Cantidad..." style="float: right; width: 20%; border-radius: 10px; background-color: #ECECEC; border-style: none;">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn cerrar" data-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn guardar">Guardar</button>
+                    <button type="button" class="btn guardar">Agregar</button>
                 </div>
             </div>
         </div>
