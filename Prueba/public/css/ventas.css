@@ -84,3 +84,45 @@ body{
 .cerrar:hover{
     background-color: #b13d23;
 }
+
+.editarCompra{
+    float: right; margin-top: 5%; width: 20%;
+    background-color: #AA948E;
+    font-weight: bold;
+}
+
+.editarCompra:hover{
+    background-color: #8f7872;
+}
+
+.editar{
+    background-color: #FFCC4D;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 40%;
+    float: right;
+    border-radius: 30px;
+}
+
+.editar:hover{
+    background-color: #f5b835;
+}
+
+.eliminar{
+    background-color: #9B180F;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 40%;
+    float: left;
+    border-radius: 30px;
+}
+
+.eliminar:hover{
+    background-color: #83160e;
+}
